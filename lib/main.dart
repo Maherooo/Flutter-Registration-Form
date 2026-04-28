@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:formproject/login.dart';
 void main() {
-  runApp(
-    MaterialApp(
-      debugShowCheckedModeBanner: false,
-      initialRoute: 'login',
-      routes: {
-        'login':(context) => MyLogin()
-      },
-    )
-  );
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(debugShowCheckedModeBanner: false, home: LoginPage());
+  }
 }

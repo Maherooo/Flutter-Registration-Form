@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 
-class MyLogin extends StatefulWidget {
+class LoginPage extends StatelessWidget {
+  final TextEditingController emailController = TextEditingController();
+  final TextEditingController passwordController = TextEditingController();
   @override
-  _MyLoginState createState() => _MyLoginState();
-}
-
-class _MyLoginState extends State<MyLogin> {
-
-  @override
-  Widget build(BuildContext context){
-    
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.grey,
+      body: SafeArea(
+        
+        child: Padding(padding: const EdgeInsets.symmetric(horizontal: 25)),
+      ),
+    );
   }
-  
 }
